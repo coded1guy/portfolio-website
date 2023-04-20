@@ -1,0 +1,86 @@
+/* base styles for the website */
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: inherit;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --heavy-blue: #025159;
+    --dirty-white: #eee;
+    --white: #fff;
+    --gold: #F2AE30;
+    /* font family */
+    --logo-font: 'Kdam Thmor Pro', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+
+    --large-screen: 700px;
+}
+body {
+    background-color: var(--heavy-blue);
+    color: var(--dirty-white);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23024d54' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%2302484f' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2301444b' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23013f46' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23013B41' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+button {
+    outline: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+header, main, footer {
+    width: 100%;
+}
+header {
+    flex: 1;
+}
+.logo {
+    font-family: var(--logo-font);
+}
+.logo > a {
+    text-decoration: none;
+    color: var(--gold);
+}
+main {
+    font-family: var(--montserrat);
+    flex: 2;
+}
+footer {
+    font-family: var(--poppins);
+    flex: 3;
+}
+@media screen and (max-width: 300px) {
+    .app {
+        display: none;
+    }
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    body:after {
+        content: "View on a larger screen";
+        text-align: center;
+        font-family: var(--poppins);
+        font-size: 20px;
+    }
+
+}
