@@ -98,6 +98,9 @@
   width: 100%;
   max-width: 700px;
 }
+.briefs p {
+  line-height: 1.5;
+}
 .about-cnt > img {
   width: 250px;
   height: 250px;
@@ -107,7 +110,7 @@
   margin-top: 20px;
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
+  gap: 16px;
 }
 .SATs ul {
   display: flex;

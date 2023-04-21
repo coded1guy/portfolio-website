@@ -3,9 +3,11 @@
     <h2>My Experience</h2>
     <ul class="experience-list">
       <li class="exp-desc">
-        I was introduced to <strong>Frontend Web Development</strong> in 2016 by some
-        alumni of my secondary school, I then went on to learn <strong>HTML</strong>,
-        <strong>CSS</strong> and <strong>JS</strong> from codecademy and freecodecamp by myself.
+        I was introduced to <strong>Frontend Web Development</strong> in 2016 by
+        some alumni of my secondary school, I then went on to learn <strong>HTML</strong>,
+        <strong>CSS</strong> and <strong>JS</strong> from
+        <a href="www.codecademy.com" target="_blank">codecademy</a> and
+        <a href="https://www.freecodecamp.org/learn" target="_blank">freecodecamp</a>.
       </li>
       <li class="exp-desc">
         Across late 2016 to 2017 I got into a “learning craze” where I started tutorials in
@@ -74,6 +76,9 @@
   color: var(--heavy-blue);
   transition: .5s ease;
   box-shadow: 4px 4px 1px rgba(242,174,48,.7);
+}
+.exp-desc a {
+  text-decoration: underline;
 }
 @media screen and (min-width: 650px) {
   .experience-list {
