@@ -6,7 +6,7 @@
         I was introduced to <strong>Frontend Web Development</strong> in 2016 by
         some alumni of my secondary school, I then went on to learn <strong>HTML</strong>,
         <strong>CSS</strong> and <strong>JS</strong> from
-        <a href="www.codecademy.com" target="_blank">codecademy</a> and
+        <a href="https://www.codecademy.com/" target="_blank">codecademy</a> and
         <a href="https://www.freecodecamp.org/learn" target="_blank">freecodecamp</a>.
       </li>
       <li class="exp-desc">
