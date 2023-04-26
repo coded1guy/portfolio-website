@@ -2,7 +2,7 @@
   <section id="about">
     <h2>About Me</h2>
     <div class="about-cnt">
-      <img src="https://avatars.githubusercontent.com/u/42422184?v=4" alt="a picture of me" />
+      <img src="/profile-image.jpeg" alt="A picture of Emmanuel Olubiyi." />
       <div class="briefs">
         <p>
           I am a <strong>Software Engineer</strong> with <strong>3 years</strong>
@@ -105,6 +105,7 @@
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  box-shadow: 1px 1px 20px rgba(2,81,89,.5);
 }
 .SATs {
   margin-top: 20px;
@@ -146,18 +147,24 @@ h4 {
 }
 
 @media screen and (min-width: 800px) {
-  .about-cnt {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  .briefs > p {
-    order: 1;
-  }
   .about-cnt > img {
-    order: 2;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+  }
+  @media screen and (min-width: 900px) {
+    .about-cnt {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .briefs > p {
+      order: 1;
+    }
+    .about-cnt > img {
+      order: 2;
+      width: 350px;
+      height: 350px;
+    }
   }
 }
 </style>
